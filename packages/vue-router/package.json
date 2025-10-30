@@ -46,9 +46,9 @@
   "module": "dist/esm/index.js",
   "exports": {
     ".": {
-      "solid": {
+      "vue": {
         "types": "./dist/source/index.d.ts",
-        "default": "./dist/source/index.jsx"
+        "default": "./dist/source/index.js"
       },
       "import": {
         "types": "./dist/esm/index.d.ts",
@@ -60,7 +60,7 @@
       }
     },
     "./ssr/server": {
-      "solid": {
+      "vue": {
         "types": "./dist/source/ssr/server.d.ts",
         "default": "./dist/source/ssr/server.js"
       },
@@ -74,7 +74,7 @@
       }
     },
     "./ssr/client": {
-      "solid": {
+      "vue": {
         "types": "./dist/source/ssr/client.d.ts",
         "default": "./dist/source/ssr/client.js"
       },
@@ -108,8 +108,8 @@
     "tiny-warning": "^1.0.3"
   },
   "devDependencies": {
-    "@solidjs/testing-library": "^0.8.10",
     "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/vue": "^8.1.0",
     "@vitejs/plugin-vue": "^6.0.1",
     "combinate": "^1.1.11",
     "vue": "^3.5.22",

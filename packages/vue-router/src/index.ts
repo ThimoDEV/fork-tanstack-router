@@ -248,7 +248,7 @@ export {
 export type { UseMatchRouteOptions, MakeMatchRouteOptions } from './matches'
 
 export { matchContext } from './matchContext'
-export { Match, Outlet } from './match'
+export { Match, Outlet } from './Match'
 
 export { useMatch } from './useMatch'
 export { useLoaderDeps } from './useLoaderDeps'

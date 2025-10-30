@@ -27,7 +27,7 @@ const config = defineConfig(({ mode }) => {
       watch: false,
       environment: 'jsdom',
       typecheck: { enabled: true },
-      setupFiles: ['./tests/setupTests.tsx'],
+      setupFiles: ['./tests/setupTests.ts'],
     },
   }
 })
@@ -36,7 +36,7 @@ export default defineConfig((env) =>
   mergeConfig(
     config(env),
     tanstackViteConfig({
-      entry: ['./src/index.tsx', './src/ssr/client.ts', './src/ssr/server.ts'],
+      entry: ['./src/index.ts', './src/ssr/client.ts', './src/ssr/server.ts'],
       srcDir: './src',
     }),
   ),
